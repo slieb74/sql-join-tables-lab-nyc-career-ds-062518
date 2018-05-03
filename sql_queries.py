@@ -54,7 +54,16 @@ def list_heroes_and_their_num_of_powers_ordered_by_hero_name_alphabetically():
 
 def select_heroes_name_and_sum_damage_points_ordered_by_most_damage_to_least():
     return """SELECT heroes.name, SUM(powers.damage_points) AS total_damage
-            FROM heroes INNER JOIN hero_powers, powers
+            FROM heroes
+            INNER JOIN hero_powers, powers
             ON heroes.id = hero_powers.hero_id AND hero_powers.power_id = powers.id
             GROUP BY heroes.name
             ORDER BY total_damage DESC;"""
+
+def all_start_team():
+    return """SELECT heroes.name, SUM(powers.damage_points) AS total_damage
+            FROM heroes
+            INNER JOIN hero_powers, powers
+            ON heroes.id = hero_powers.hero_id AND hero_powers.power_id = powers.id
+            GROUP BY heroes.name
+            HAVING total_damage > 45;"""

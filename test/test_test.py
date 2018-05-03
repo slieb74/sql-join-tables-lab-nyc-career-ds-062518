@@ -38,3 +38,7 @@ class TestJoinStatements(unittest.TestCase):
     def test_select_heroes_name_and_sum_damage_points_ordered_by_most_damage_to_least(self):
         result = [('Goku', 80), ('Superman', 80), ('Black Widow', 55), ('Captain America', 55), ('Wonder Woman', 50), ('Black Panther', 40), ('Cyborg', 40), ('Iron Man', 40), ('Thor', 40), ('Batman', 35), ('Hulk', 30), ('Megaman', 25), ('StretcherFlex', 10), ('Aquaman', 5), ('Green Lantern', 1)]
         self.assertEqual(cursor.execute(select_heroes_name_and_sum_damage_points_ordered_by_most_damage_to_least()).fetchall(), result)
+
+    def test_all_start_team(self):
+        result = [('Black Widow', 55), ('Captain America', 55), ('Goku', 80), ('Superman', 80), ('Wonder Woman', 50)]
+        self.assertEqual(cursor.execute(all_start_team()).fetchall(), result)
