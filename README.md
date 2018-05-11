@@ -52,7 +52,7 @@ id |type                   |damage_points|
 4  |summons lightning      |10           |
 5  |ultra smart            |20           |
 6  |unlimited financing    |5            |
-7  |breaths underwater     |5            |
+7  |breathes underwater    |5            |
 8  |enhanced speed         |10           |
 9  |enhanced agility       |10           |
 10 |expert martial artist  |15           |
@@ -61,7 +61,7 @@ id |type                   |damage_points|
 13 |enhanced flexibility   |10           |
 14 |magic ring             |1            |
 15 |advanced weaponry      |10           |
-16 |breaths in outer space |10           |
+16 |breathes in outer space|10           |
 17 |x-ray vision           |10           |
 
 
