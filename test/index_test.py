@@ -8,9 +8,6 @@ cursor = connection.cursor()
 
 class TestJoinStatements(unittest.TestCase):
 
-    file = open("../sql_queries.py", "r")
-    file.read()
-
     def test_select_expert_martial_artists_using_id(self):
         result = [('Batman',), ('Black Widow',), ('Goku',)]
         cursor.execute(select_expert_martial_artists_using_id()).fetchall()
