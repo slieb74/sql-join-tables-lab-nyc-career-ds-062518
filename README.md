@@ -52,7 +52,7 @@ id |type                   |damage_points|
 4  |summons lightning      |10           |
 5  |ultra smart            |20           |
 6  |unlimited financing    |5            |
-7  |breaths underwater     |5            |
+7  |breathes underwater    |5            |
 8  |enhanced speed         |10           |
 9  |enhanced agility       |10           |
 10 |expert martial artist  |15           |
@@ -61,7 +61,7 @@ id |type                   |damage_points|
 13 |enhanced flexibility   |10           |
 14 |magic ring             |1            |
 15 |advanced weaponry      |10           |
-16 |breaths in outer space |10           |
+16 |breathes in outer space|10           |
 17 |x-ray vision           |10           |
 
 
@@ -140,35 +140,39 @@ Write your SQL queries inside the strings found in the functions already provide
 
 * `select_expert_martial_artists_using_id`
 
-Write a query that joins the `heroes` table and the `hero_powers` table to select the names of all heroes that have a `power.id` of 10.  
+> Write a query that joins the `heroes` table and the `hero_powers` table to select the names of all heroes that have a `power.id` of 10.  
 
 * `select_all_power_types_for_batman`
 
-Although it is easy for a computer to remember heroes and powers based upon their id numbers, we human beings struggle remembering all this information.  From here to the end of the lab, we will write queries that join the `heroes`, `hero_powers`, and `powers` tables to work with data we can easily interpret.
+> Write a query that returns all of Batman's power types.
 
-Write a query that returns all of Batman's power types.
+Although it is easy for a computer to remember heroes and powers based upon their id numbers, we human beings struggle remembering all this information.  From here to the end of the lab, we will write queries that join the `heroes`, `hero_powers`, and `powers` tables to work with data we can easily interpret.
 
 * `select_total_damage_points_for_wonder_woman`
 
-Write a query that adds the damage points for all of Wonder Woman's powers.
+> Write a query that adds the damage points for all of Wonder Woman's powers.
 
 * `list_iron_mans_powers_and_respective_damage_points`
 
-Write a query that lists all of Iron Man's power types and respective damage points.
+> Write a query that lists all of Iron Man's power types and respective damage points.
 
 * `total_power_of_only_humans`
 
-Write a query that returns the total damage points of all human superheroes.  We know that all human superheroes have a weakness of "mortal human".
+> Write a query that returns the total damage points of all human superheroes.  We know that all human superheroes have a weakness of "mortal human".
 
 * `list_heroes_and_their_num_of_powers_ordered_by_hero_name_alphabetically`
 
-This query returns names of all heroes and counts their total number of powers aliased as `num_of_powers`.
+> This query returns names of all heroes and counts their total number of powers aliased as `num_of_powers`.
 
 
 * `select_heroes_name_and_sum_damage_points_ordered_by_most_damage_to_least`
 
-Write a query that orders all superheroes based upon their total number of damage points.  A hero's total number of damage points should be aliased as `total_damage`.  
+> Write a query that orders all superheroes based upon their total number of damage points.  A hero's total number of damage points should be aliased as `total_damage`.  
 
 * `all_star_team`
 
-Write a query that determines which superheroes should be part of a "Superhero All-Star Team".  Heroes belong on the team if their total damage points (again aliased as `total_damage`) are greater than 45.
+> Write a query that determines which superheroes should be part of a "Superhero All-Star Team".  Heroes belong on the team if their total damage points (again aliased as `total_damage`) are greater than 45.
+
+## Summary
+
+Great work! In this lab we practiced writing SQL queries on tables with a many to many relationship. We used JOIN statements to query results across tables and select only instances that met the requirements 
